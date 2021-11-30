@@ -10,10 +10,10 @@ if os.path.exists('example.db'):
 conn = sqlite3.connect('example.db')
 
 # Load some csv data
-visits = pd.read_csv('visits.csv')
-fitness_tests = pd.read_csv('fitness_tests.csv')
-applications = pd.read_csv('applications.csv')
-purchases = pd.read_csv('purchases.csv')
+visits = pd.read_csv('aineistot/visits.csv')
+fitness_tests = pd.read_csv('aineistot/fitness_tests.csv')
+applications = pd.read_csv('aineistot/applications.csv')
+purchases = pd.read_csv('aineistot/purchases.csv')
 
 # Add the data to our database
 visits.to_sql('visits', conn, dtype={
